@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sai Tuition Centre</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<style>
+    /* Basic reset for margin and padding */
+body, h1, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the gallery container */
+.gallery {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gallery h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* Ensuring each row contains exactly 3 images on larger screens */
+@media (min-width: 992px) { /* For laptops and desktops */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.gallery-grid img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 991px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+</style>
+
+<body>
+    <!-- Topbar Start -->
+    <div  class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center py-4 px-xl-5">
+            <div class="col-lg-3">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0"><span class="text-primary"><img height="70px
+                        " src="./img/pdf_page-0001-removebg-preview.png" alt=""></h1>
+                </a>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
+                        <small>No 95,Om Sakthi Nagar, Vengikkal, Tiruvannamalai 606604
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1"> Email US</h6>
+                        <small>aravindcompu@gmail.com </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-phone text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
+                        <small>8870049639</small>
+                        <br>
+                        <small>8778548943</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ... Your topbar content ... -->
+    
+    <!-- Navbar Start -->
+    <div style="text-align: center;" class="container-fluid ">
+        <div class="row border-top  ">
+             <div class="col-lg-1"></div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <div class="container-fluid">
+                        <a href="" class="navbar-brand text-decoration-none d-block d-lg-none">
+                            <img height="50px" src="./img/pdf_page-0001-removebg-preview.png" alt="">
+                        </a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav w-100 justify-content-between">
+                                <a href="index.html" class="nav-item nav-link ">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <!-- dropdown -->
+                              
+                                <!-- dropdown -->
+                                <div class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Classes</a>
+                                    <div style="" class="dropdown-menu rounded-0 m-0">
+                                        <a href="metric.html" class="dropdown-item ">Matriculation</a>
+                                        <a href="cbse.html" class="dropdown-item ">CBSE</a>
+                                        <a href="spoken.html" class="dropdown-item ">Spoken English</a>
+                                        <a href="hindi.html" class="dropdown-item ">Hindi</a>
+                                        <a href="abacus.html" class="dropdown-item ">Abacus</a>
+                                    </div>
+                                </div>
+                                <div  class="nav-item dropdown">
+                                    <a  href="" class="nav-link dropdown-toggle  extra" data-toggle="dropdown">Extracurricular Activities</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="yoga.html" class="dropdown-item">Yoga</a>
+                                        <a href="karate.html" class="dropdown-item">Karate</a>
+                                        <a href="silambam.html" class="dropdown-item">Silambam</a>
+                                        
+                                    </div>
+                                </div>
+                                <a href="playschool.html" class="nav-item nav-link active">Play School</a>
+                              
+                                <a href="teacher.html" class="nav-item nav-link">Teachers</a>
+                                
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                                <a target="_blank" href="login.html" class="nav-item nav-link">Admin</a>
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- ... Your navbar content ... -->
+
+    <!-- Header Start -->
+    <!-- ... Your header content ... -->
+
+    <!-- Gallery Start -->
+    <style>
+        .gallery-grid img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .gallery-grid img[alt="Gel 8"] {
+                height: auto !important;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .gallery-grid img[alt="Gel 8"] {
+                height: 135px !important;
+            }
+        }
+    </style>
+    <div class="container text-">
+        <p> <h1>SVS Play School:</h1> Where Learning Meets Fun</p>
+<h4>Welcome to SVS Play School!</h4>
+<p>At SVS Play School, we believe that early childhood is a magical time of exploration and growth. Our mission is to nurture young minds and help them flourish in a safe, engaging, and stimulating environment. We are dedicated to providing a holistic education that balances academic learning with extracurricular activities, ensuring that each child develops a well-rounded personality.</p>
+<h3> Our Philosophy</h3>
+<p>SVS Play School is built on the foundation of love, care, and respect for each child. We understand that every child is unique and we strive to cater to their individual needs and interests. Our curriculum is designed to foster curiosity, creativity, and a love for learning, preparing children for the next stages of their educational journey.</p>
+<h3>Extracurricular Activities</h3>
+<p>To complement our academic programs, we offer a variety of extracurricular activities that encourage physical fitness, cultural awareness, and environmental stewardship. Here are some of the exciting activities we offer:</p>
+<p><h4>1. Karate</h4>- Discipline and Focus: Karate teaches children discipline, focus, and self-control. It's an excellent way for them to channel their energy positively.<br />- Physical Fitness: Karate sessions help improve strength, flexibility, and coordination.</p>
+<p><h4>2. Silambam</h4> <h5>Cultural Heritage:</h5> Silambam is an ancient martial art from Tamil Nadu, promoting cultural heritage and pride.<br /> <h5 class="my-2
+    ">Skill Development:</h5> This activity enhances agility, balance, and reflexes through rhythmic movements and techniques.</p>
+<p><h4>3. Planting Trees</h4>- Environmental Awareness: We believe in nurturing a love for nature. Our tree planting activities teach children the importance of caring for the environment.<br />- Hands-On Learning: Kids get hands-on experience in planting and tending to trees, learning about growth and sustainability.</p>
+<h4>Why Choose SVS Play School?</h4>
+<p><h5> Experienced Educators:</h5> Our team of experienced and passionate teachers are dedicated to creating a nurturing and inspiring learning environment.<br />- Safe and Secure: We prioritize the safety and well-being of our students with secure facilities and vigilant staff.<br />- Holistic Development: Our balanced approach ensures that children grow academically, physically, and socially.</p>
+<p> Join Us!</p>
+<p>At SVS Play School, we are committed to laying the foundation for a lifetime of learning and happiness. Come join our family and watch your child thrive!</p>
+
+    </div>
+      <div class="gallery p-5 container">
+        <h1>Image Gallery</h1>
+        <div class="gallery-grid">
+            <!-- Add your images here -->
+            <img src="./img/gel1.jpg" alt="Gel 1" class="img-fluid">
+            <img src="./img/gel2.jpg" alt="Gel 2" class="img-fluid">
+            <img src="./img/gel3.jpg" alt="Gel 3" class="img-fluid">
+            <img src="./img/gel4.jpg" alt="Gel 4" class="img-fluid">
+            <img src="./img/gel5.jpg" alt="Gel 5" class="img-fluid">
+            <img src="./img/gel6.jpg" alt="Gel 6" class="img-fluid">
+            <img src="./img/Acheive2.jpg" alt="Acheive 2" class="img-fluid">
+            <img src="./img/achieve1.jpg" alt="Achieve 1" class="img-fluid">
+            <img style="height: 230px;" src="./img/gel8.jpg" alt="Gel 8" class="img-fluid">
+            <img src="./img/gel9.jpg" alt="Gel 9" class="img-fluid">
+            <img src="./img/gel10.jpg" alt="Gel 10" class="img-fluid">
+            <img src="./img/gel13.jpg" alt="Gel 13" class="img-fluid">
+            <img src="./img/gel14.jpg" alt="Gel 14" class="img-fluid">
+            <img src="./img/gel15.jpg" alt="Gel 15" class="img-fluid">
+            <img src="./img/gel16.jpg" alt="Gel 16" class="img-fluid">
+            <img src="./img/gel17.jpg" alt="Gel 17" class="img-fluid">
+            <img src="./img/gel18.jpg" alt="Gel 18" class="img-fluid">
+            <img src="./img/gel19.jpg" alt="Gel 19" class="img-fluid">
+            <img src="./img/gel20.jpg" alt="Gel 20" class="img-fluid">
+            <img src="./img/gel25.jpg" alt="Gel 25" class="img-fluid">
+            <img src="./img/gel7.jpg" alt="Gel 7" class="img-fluid">
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5 justify-content-center "
+    style="margin-top: 90px;">
+    <div class="row">
+        <div class="col-12  col-lg-3 my-3 my-lg-0 text-center align-items-center justify-content-center mb-5 mb-lg-0 ">
+            <img style="height: 100px;" src="./img/pdf_page-0001-removebg-preview.png" alt="">
+            <div class=" justify-content-start mt-4 text-center mt-3 ">
+                <a class="btn btn-outline-light btn-square mr-2 " href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3 justify-content-center text-center">
+            <h5 class="text-primary text-uppercase mb-2 mb-lg-3" style="letter-spacing: 5px;">Get In Touch</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>No 95,Om Sakthi Nagar, Vengikkal, Tiruvannamalai 606604
+            </p>
+            <p><i class="fa fa-phone-alt mr-2"></i>8870049639,8778548943</p>
+            <p><i class="fa fa-envelope mr-2"></i>aravindcompu@gmail.com </p>
+
+        </div>
+        <div class="col-12 col-lg-3 mt-2 mt-lg-0 text-center my-3 my-lg-0">
+            <h5 class="text-primary text-uppercase mb-1" style="letter-spacing: 5px;">Our Courses</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white mb-2" href="metric.html"><i class=" mr-2"></i>Matriculation</a>
+                <a class="text-white mb-2" href="cbse.html"><i class=" mr-2"></i>CBSE</a>
+                <a class="text-white mb-2" href="spoken.html"><i class=" mr-2"></i>Spoken English</a>
+                <a class="text-white mb-2" href="hindi.html"><i class=" mr-2"></i>Hindi</a>
+                <a class="text-white" href="abacus.html"><i class=" mr-2"></i>Abacus</a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3 mt-2 mt-lg-0 text-center">
+            <h5 class="text-primary text-uppercase mb-0" style="letter-spacing: 5px;">Extracurricular</h5>
+            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Activities</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white mb-2" href="metric.html"><i class=" mr-2"></i>Yoga</a>
+                <a class="text-white mb-2" href="cbse.html"><i class=" mr-2"></i>Karate</a>
+                <a class="text-white mb-2" href="spoken.html"><i class=" mr-2"></i>Silambam</a>
+            </div>
+        </div>
+
+    </div>
+   
+</div>
+
+
+
+
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+    style="border-color: rgba(256, 256, 256, .1) !important;">
+
+    <p class="m-0 text-white text-center">&copy; All Rights Reserved @Sai Tution Center
+    </p>
+</div>
+    <!-- Footer End -->
+
+
+  
+    <!-- ... Your footer content ... -->
+
+    <!-- Back to Top -->
+    <!-- ... Your back to top button ... -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
